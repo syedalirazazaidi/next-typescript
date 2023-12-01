@@ -37,4 +37,12 @@
 
 ## Union Type
 
--are used to declair type that can have one of several possible types 
+-are used to declair type that can have one of several possible types
+
+## Literal Type
+
+- The string literal types allow you to define a type that accepts only one specified string literal.
+
+## Tuples
+
+- A tuple works like an array with some additional considerations:

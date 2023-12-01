@@ -166,3 +166,13 @@ let e: Employee = {
   email: "john.doe@example.com",
   phone: "(408)-897-5684",
 };
+
+// Union Type
+
+var namenumb: string | number = "aliraza";
+
+// Literal Type
+
+let numberNum = 4 | 5 | 6;
+numberNum = 4; //valid
+numberNum = 10; //invalid
