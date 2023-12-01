@@ -20,4 +20,11 @@
 
 ## Objects
 
--- a object in typescript is a structure datatype that represent the collection of properties
+- a object in typescript is a structure datatype that represent the collection of properties
+
+## type Aliases
+
+- is a way to create a new name for an existing type it allow you to define a custom type that refer to another type and give more
+  meaningful or descriptive name
+
+## Optional Properties

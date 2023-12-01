@@ -121,7 +121,13 @@ const personTypeon: TntObj = {
   numb: 50,
 };
 
-function objName({ name="newdev", numb=90 }: { name: string; numb: number }): {
+function objName({
+  name = "newdev",
+  numb = 90,
+}: {
+  name: string;
+  numb: number;
+}): {
   name: string;
   numb: number;
 } {
