@@ -13,3 +13,11 @@
 ## Function Parameters Annotations
 
 - expected type of the parameter that a function takes
+
+## Multidimension Array
+
+- a multidimension array is an array that contain other array as its elements
+
+## Objects
+
+-- a object in typescript is a structure datatype that represent the collection of properties

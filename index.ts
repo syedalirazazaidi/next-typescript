@@ -94,3 +94,29 @@ console.log(throwNever("hi developer"));
 const arr2: (number | string | boolean)[] = [3, 4, 5, 6, "dev", false];
 
 const arr3: Array<string | boolean> = ["develoepr", "engineer", false];
+
+//multidimension array
+
+const matrix: number[][] = [
+  [1, 2, 3],
+  [4, 5, 6],
+];
+
+// Objects
+type ObjType = {
+  personTypeon: TntObj;
+};
+type TntObj = {
+  nameMy: string;
+  occupation: string;
+  numb: number;
+};
+const personObj: { name: string; occupation: string } = {
+  name: "raza",
+  occupation: "developer",
+};
+const personTypeon: TntObj = {
+  nameMy: "raza",
+  occupation: "developer",
+  numb: 50,
+};
