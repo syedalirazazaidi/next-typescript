@@ -176,3 +176,11 @@ var namenumb: string | number = "aliraza";
 let numberNum = 4 | 5 | 6;
 numberNum = 4; //valid
 numberNum = 10; //invalid
+
+// Tuples Type
+
+let skill: [string, number];
+skill = ['Programming', 5];
+
+let color: [number, number, number] = [255, 0, 0];
+

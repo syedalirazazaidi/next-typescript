@@ -46,3 +46,8 @@
 ## Tuples
 
 - A tuple works like an array with some additional considerations:
+
+## Enum
+
+- An enum is a group of named constant values. Enum stands for enumerated type.
+
