@@ -92,3 +92,5 @@ console.log(throwNever("hi developer"));
 //array are the type of object that can stor multiple value
 
 const arr2: (number | string | boolean)[] = [3, 4, 5, 6, "dev", false];
+
+const arr3: Array<string | boolean> = ["develoepr", "engineer", false];
