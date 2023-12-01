@@ -34,3 +34,7 @@
 ## Intersection type
 
 - An intersection type creates a new type by combining multiple existing types. The new type has all features of the existing types.
+
+## Union Type
+
+-are used to declair type that can have one of several possible types 
