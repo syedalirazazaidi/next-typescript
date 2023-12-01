@@ -28,3 +28,9 @@
   meaningful or descriptive name
 
 ## Optional Properties
+
+## Readonly property
+
+## Intersection type
+
+- An intersection type creates a new type by combining multiple existing types. The new type has all features of the existing types.

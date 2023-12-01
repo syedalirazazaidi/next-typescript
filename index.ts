@@ -125,12 +125,15 @@ function objName({
   name = "newdev",
   numb = 90,
 }: {
-  name: string;
+  readonly name: string;
   numb: number;
 }): {
-  name: string;
+  readonly name: string;
   numb: number;
 } {
+  name = "engineer";
+  console.log(name);
+
   return { name, numb };
 }
 
