@@ -120,3 +120,13 @@ const personTypeon: TntObj = {
   occupation: "developer",
   numb: 50,
 };
+
+function objName({ name="newdev", numb=90 }: { name: string; numb: number }): {
+  name: string;
+  numb: number;
+} {
+  return { name, numb };
+}
+
+const respt = objName({ name: "aliraza", numb: 50 });
+console.log(respt);
