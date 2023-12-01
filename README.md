@@ -50,4 +50,3 @@
 ## Enum
 
 - An enum is a group of named constant values. Enum stands for enumerated type.
-

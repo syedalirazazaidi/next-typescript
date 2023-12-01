@@ -184,3 +184,19 @@ skill = ['Programming', 5];
 
 let color: [number, number, number] = [255, 0, 0];
 
+
+// Enums
+
+
+enum ApprovalStatus {
+    draft,
+    submitted,
+    approved,
+    rejected
+};
+
+const request =  {
+    id: 1,
+    status: ApprovalStatus.approved,
+    description: 'Please approve this request'
+};
