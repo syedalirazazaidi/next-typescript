@@ -50,3 +50,12 @@
 ## Enum
 
 - An enum is a group of named constant values. Enum stands for enumerated type.
+
+## Class Properties Annotation
+
+## Access Modified
+
+- Access modifiers change the visibility of the properties and methods of a class. TypeScript provides three access modifiers:
+##### private
+##### protected
+##### public

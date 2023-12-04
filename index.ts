@@ -194,9 +194,59 @@ enum ApprovalStatus {
     approved,
     rejected
 };
+interface TYPESTATUS {
+    id: number;
+    status: ApprovalStatus;
+    description: string;
+}
 
-const request =  {
+const request:TYPESTATUS =  {
     id: 1,
     status: ApprovalStatus.approved,
     description: 'Please approve this request'
 };
+
+function Person(ssn, firstName, lastName) {
+    this.ssn = ssn;
+    this.firstName = firstName;
+    this.lastName = lastName;
+}
+
+
+class PersonPublic {
+    public ssn: string;
+    public firstName: string;
+    public lastName: string;
+
+    constructor(ssn: string, firstName: string, lastName: string) {
+        this.ssn = ssn;
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    getFullName(): string {
+        return `${this.firstName} ${this.lastName}`; 
+    }
+}
+
+let personPublic = new PersonPublic('153-07-3130', 'John', 'Doe');
+console.log(personPublic.firstName)
+
+class PersonPrivate {
+    private ssn: string;
+    private firstName: string;
+    private lastName: string;
+
+    constructor(ssn: string, firstName: string, lastName: string) {
+        this.ssn = ssn;
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    getFullName(): string {
+        return `${this.firstName} ${this.lastName}`; 
+    }
+}
+
+let personPrivate = new PersonPublic('153-07-3130', 'John', 'Doe');
+console.log(personPublic.firstName)
