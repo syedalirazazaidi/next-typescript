@@ -288,10 +288,32 @@ interface Car {
 }
 
 interface Civic extends Car {
-    company?: string;
-  }
+  company?: string;
+}
 
-  const  objCar:Civic={
-    color:'red'
+const objCar: Civic = {
+  color: "red",
+};
 
-  }
+interface Collection<T> {
+  add(o: T): void;
+  //   remove(o: T)?: void;
+}
+
+// const Add<T>=((arg:T):T)=>{
+// return arg
+// }
+// add('aliraza')
+
+function Add<T>(param: T): T {
+  return param;
+}
+Add("developer");
+
+function randomKeyValuepair<T>(params: { [key: string]: T }): {
+  key: string;
+  value: string;
+} {
+  return { key: params.key, value:  params.key };
+}
+randomKeyValuepair({ key: "develoepr", value: "propertie" });
