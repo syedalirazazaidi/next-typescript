@@ -249,4 +249,4 @@ class PersonPrivate {
 }
 
 let personPrivate = new PersonPublic('153-07-3130', 'John', 'Doe');
-console.log(personPublic.firstName)
+console.log(personPublic.getFullName())
