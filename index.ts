@@ -180,73 +180,118 @@ numberNum = 10; //invalid
 // Tuples Type
 
 let skill: [string, number];
-skill = ['Programming', 5];
+skill = ["Programming", 5];
 
 let color: [number, number, number] = [255, 0, 0];
 
-
 // Enums
 
-
 enum ApprovalStatus {
-    draft,
-    submitted,
-    approved,
-    rejected
-};
+  draft,
+  submitted,
+  approved,
+  rejected,
+}
 interface TYPESTATUS {
-    id: number;
-    status: ApprovalStatus;
-    description: string;
+  id: number;
+  status: ApprovalStatus;
+  description: string;
 }
 
-const request:TYPESTATUS =  {
-    id: 1,
-    status: ApprovalStatus.approved,
-    description: 'Please approve this request'
+const request: TYPESTATUS = {
+  id: 1,
+  status: ApprovalStatus.approved,
+  description: "Please approve this request",
 };
 
 function Person(ssn, firstName, lastName) {
+  this.ssn = ssn;
+  this.firstName = firstName;
+  this.lastName = lastName;
+}
+
+class PersonPublic {
+  public ssn: string;
+  public firstName: string;
+  public lastName: string;
+
+  constructor(ssn: string, firstName: string, lastName: string) {
     this.ssn = ssn;
     this.firstName = firstName;
     this.lastName = lastName;
+  }
+
+  getFullName(): string {
+    return `${this.firstName} ${this.lastName}`;
+  }
 }
 
-
-class PersonPublic {
-    public ssn: string;
-    public firstName: string;
-    public lastName: string;
-
-    constructor(ssn: string, firstName: string, lastName: string) {
-        this.ssn = ssn;
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
-
-    getFullName(): string {
-        return `${this.firstName} ${this.lastName}`; 
-    }
-}
-
-let personPublic = new PersonPublic('153-07-3130', 'John', 'Doe');
-console.log(personPublic.firstName)
+let personPublic = new PersonPublic("153-07-3130", "John", "Doe");
+console.log(personPublic.firstName);
 
 class PersonPrivate {
-    protected ssn: string;
-    protected firstName: string;
-    protected lastName: string;
+  protected ssn: string;
+  protected firstName: string;
+  protected lastName: string;
 
-    constructor(ssn: string, firstName: string, lastName: string) {
-        this.ssn = ssn;
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
+  constructor(ssn: string, firstName: string, lastName: string) {
+    this.ssn = ssn;
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
 
-    getFullName(): string {
-        return `${this.firstName} ${this.lastName}`; 
-    }
+  getFullName(): string {
+    return `${this.firstName} ${this.lastName}`;
+  }
 }
 
-let personPrivate = new PersonPublic('153-07-3130', 'John', 'Doe');
-console.log(personPublic.lastName)
+let personPrivate = new PersonPublic("153-07-3130", "John", "Doe");
+console.log(personPublic.lastName);
+
+class PersonExample {
+  private _age: number;
+  private _firstName: string;
+  private _lastName: string;
+
+  public get age() {
+    return this._age;
+  }
+
+  public set age(theAge: number) {
+    if (theAge <= 0 || theAge >= 200) {
+      throw new Error("The age is invalid");
+    }
+    this._age = theAge;
+  }
+
+  public getFullName(): string {
+    return `${this._firstName} ${this._lastName}`;
+  }
+}
+
+let persoexample = new PersonExample();
+
+function getFullName(person: { firstName: string; lastName: string }) {
+  return `${person.firstName} ${person.lastName}`;
+}
+
+let personOne = {
+  firstName: "John",
+  lastName: "Doe",
+};
+
+console.log(getFullName(personOne));
+
+interface Car {
+  wheel?: string;
+  color?: string;
+}
+
+interface Civic extends Car {
+    company?: string;
+  }
+
+  const  objCar:Civic={
+    color:'red'
+
+  }

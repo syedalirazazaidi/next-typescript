@@ -62,3 +62,10 @@
 - The private modifier allows access within the same class.
 - The protected modifier allows access within the same class and subclasses.
 - The public modifier allows access from any location.
+
+## Getters And Setters
+- A getter method returns the value of the property’s value. A getter is also called an accessor.
+- A setter method updates the property’s value. A setter is also known as a mutator.
+
+## interface 
+
