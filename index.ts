@@ -233,9 +233,9 @@ let personPublic = new PersonPublic('153-07-3130', 'John', 'Doe');
 console.log(personPublic.firstName)
 
 class PersonPrivate {
-    private ssn: string;
-    private firstName: string;
-    private lastName: string;
+    protected ssn: string;
+    protected firstName: string;
+    protected lastName: string;
 
     constructor(ssn: string, firstName: string, lastName: string) {
         this.ssn = ssn;
@@ -249,4 +249,4 @@ class PersonPrivate {
 }
 
 let personPrivate = new PersonPublic('153-07-3130', 'John', 'Doe');
-console.log(personPublic.getFullName())
+console.log(personPublic.lastName)
